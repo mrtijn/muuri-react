@@ -259,12 +259,8 @@ export function GridComponent({
           } = sentPayload;
 
           // ReceivedPayload data.
-          const {
-            toChildrenController,
-            toFiberController,
-            toGrid,
-            toIndex,
-          } = receivedPayload;
+          const {toChildrenController, toFiberController, toGrid, toIndex} =
+            receivedPayload;
 
           // Reset the payloads.
           addDecoration(item, {sentPayload: null, receivedPayload: null});
